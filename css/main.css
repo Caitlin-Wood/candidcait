@@ -1,214 +1,756 @@
-/***** BASE STYLES *****/
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-body {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #2b2b2b;
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ===================================================
+   Base styles: opinionated defaults
+   ================================================= */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
-#about, #work, #contact {
-	height: 600px;
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==============================================*/
+   /*Browser Upgrade Prompt*/
+  
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+                /************** Mobile First ************/
+
+
+/*=============== GLOBAL STYLES ==============*/
+
+html, body{
+    font-family: 'Arimo', sans-serif;
+    width:100%;
+    height:100%;
+    font-size:16px;
+    background-color:#ffffff;
+    color:#383838;
+
+}
+
+ header{
+    width:96%;
+    padding:2% 2%;
 }
 
 
-/***** GRID *****/
-
-.full-width {
-	width: 1200px;
-	margin: 0 auto;
+h1 {
+    color:#282828;
+    font-size:1.5em;
 }
 
-.half-width {
-	width: 600px;
-	float: left;
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
 }
 
-.third-width {
-	width: 400px;
-	float: left;
+h2, h3, h4{
+    color:tomato;
+    font-size:1.4em;
 }
 
-div {
-	display:block;
+figure {
+    margin:0;
 }
 
-/***** HEADER *****/
-
-header {
-	height: 800px;
-	background-image: url("../img/hero.png");
-	background-size: cover;
+img {
+ width: 100%;
+ height: auto;
 }
 
-header h1 {
-	padding: 65px 0 65px 25px;
-	color: tomato;
-	font-size: 40px;
-	font-family: 'Lora', serif;
-	font-weight: bold;
+
+.header-images{
+    width:90%;
+    padding-bottom:35%;
+    margin:0 auto;
+    max-width:940px;
+    max-height:80px;
 }
 
-header h2 {
-	width:1200px;
-	clear: both;
-	color: #9b9b9b;
-	font-size: 72px;
-	font-family: 'Lora', serif;
-	font-weight: bold;
-	margin-top:40px;
+.header-info{
+    width:96%;
+    padding:0 2%;
+    max-width:940px;
 }
 
-header h2 span{
-	color: tomato;
+
+/*=============================== HEADER ======================================*/
+
+.header-container{
+   width:100%;
+   margin:0 auto;
+   padding:2% 0;
+   background-color:#e0e0e0;
+}
+
+.header-images{
+   background: #f8f8f8 url('../img/hero.png') center no-repeat ; 
+   background-size:cover;
+}
+
+.header-logo{
+    width:100%;
+    margin:0;
+}
+
+.header-logo img{
+    width:30%;
+    height:auto;
+    margin:5% 0 0 60%;
+}
+
+.header-info{
+    font-size:1em;
+    margin:0 auto;
+}
+
+.header-info h1{
+    padding:0 2%;
+}
+
+
+.header-info span{
+    color:rgb(242, 162, 13);
+}
+
+
+
+
+/*=================== Header Nav ======================*/
+
+.header-nav{
+    font-size:0.875em;
 }
 
 nav{
-	float:right;
-	padding: 75px 25px;
+    display:none
+
+}
+
+
+section #about{
+    padding
+}
+
+
+/*=============================== ABOUT ======================================*/
+
+#about{
+    width:96%;
+    padding:0;
+    margin:1em auto;
+    max-width:940px;
+}
+
+#about h2{
+    margin:0.5em 1em;
+}
+
+
+
+.about-container{
+    width:96%;
+    margin:0 auto;
+}
+
+.about-img{
+    float:left;
+    border-radius:50%;
+    width:40%;
+    shape-margin:1px;
+    margin-right:2%;
+    margin-bottom:0.5%;
+    shape-outside:inset(1% round 100%);
+}
+
+div.half-width1, div .half-width2{
+    width:100%;
+    display:block;
+    text-align:justify;
+    font-size:1em;
+    line-height:1.6;
+    padding:0 1%;
+
+}
+
+
+.half-width1 {    
+    margin-bottom:0;
+    float:right;
+    margin-left:20%;
+}
+
+
+.half-width2{  
+    margin-top:0;
+    float:left
+    
+}
+
+
+
+/*================================ WORK ======================================*/
+
+#work {
+    clear:both;
+    width:100%;
+    background:rgba(242, 162, 13, 0.6);
+}
+
+.full-width{
+    width:96%;
+    padding: 1% 2%;
+}
+
+.third-width{
+    width:80%;
+    text-align:justify;
+       margin:0 8%;
+}
+
+
+#work h2{
+    color:tomato;
+    margin:0.5em 1em;
+
+}
+
+
+#work h3{
+    text-align:center;
+    color:#484848;
+    font-weight:700;
+    font-size:1.2em;
+}
+
+.add-skills{
+    color:#282828;
+    margin:2em 0 1em 0;
+}
+
+.add-skills span{
+    font-weight:700;
+}
+
+
+/*================================ FOOTER ======================================*/
+
+footer#contact{
+     width:100%;
+     float:left;
+     background:#e0e0e0;
+}
+
+.socials{
+    width:20%;
+    float:left;
+    margin:5% 0 5% 5%;
+
+}
+
+
+.socials ul{
+    list-style:none;
+    display:block;
+    float:left;
+    width:100%;
+    padding:0;
+    margin:0;
+    
+}
+
+
+.socials ul li{
+    display:inline;
+    padding-right:10%;
+
+}
+
+
+.fab.fa-linkedin-in{
+    font-size:1.5em;
+    color:tomato;
+}
+
+.fab.fa-github{
+    font-size:1.5em;
+    color:tomato;
+}
+
+.footer-logo{
+    width:55%;
+    float:right;
+    margin: 2% 2% 2% 18%;
+
+
+}
+
+
+#contact img{
+    width:25%;
+    max-width:80px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width:768px) {
+  /* Tablet styles here */
+
+
+/*================ TABLET Header =========================== */
+
+.header-info h1{
+    font-size:2em;
+    padding:0 10%;
+
+}
+
+.header-nav{
+    font-size:1em;
+}
+
+
+nav{
+    display:block;
+
+}
+
+
+nav ul{
+    list-style:none;
+    padding:0 22% 0 28%;
+    margin:0;
 }
 
 nav ul li{
-	display:inline-block;
-
+    display:inline;
+    text-transform:uppercase;
+    font-weight:700;
+    padding:0 2%
 }
 
 nav ul li a{
-	text-transform: uppercase;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 10px;
-    text-shadow: 2px 2px black;
-
-}
-
-h2 mark {
-	background-color: #000000;
-	color:#ffffff;
+    color:tomato;
+    text-decoration:none;
+    padding:0 2%;
+    text-align:center;
 }
 
 
 
-/***** ABOUT *****/
-
-#about .full-width {
-	padding:80px 0;
-	margin: 0 auto;
-}
-
-#about h2 {
-	font-family: 'Lora', serif;
-	font-size:36px;
-	padding-left: 50px;
-}
-
-#about p {
-	font-size: 20px;
-	color: #7f7f7f;
-	line-height: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
-	font-weight: bold;
-}
-
-
-
-/***** WORK *****/
+/*=========================== TABLET WORK ======================================*/
 
 #work {
-	background-color: tomato;
+    clear:both;
+    width:100%;
+    background:rgba(242, 162, 13, 0.6);
+    display:block;
+    float:left;
+    padding:0;
+    margin:0 auto;
 }
 
-#work .full-width {
-	text-align: center;
-	padding: 115px 0;
+#work h2{
+    color:tomato;
+    margin:0.5em 1.4em;
+
 }
 
-
-#work img {
-	padding-bottom: 30px;
+.work-container{
+    width:96%;
+    padding:0 0 0 4%;
+    margin:0 auto;
 }
 
+.full-width{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    max-width:1000px;
 
-#work h3 {
-		font-weight: bold;
-		font-size: 24px;
-		line-height: 32px;
-		margin: 0 auto;
 }
 
-#work p {
-		font-family: 'Lora', serif;
-		font-size: 18px;
-		line-height: 30px;
-		padding: 0 50px;
+.third-width{
+    width:30%;
+    display:block;
+    float:left;
+    margin:0;
+    padding:0 1%;
+    text-align:left;
 }
 
-
-
-/***** CONTACT *****/
-#contact {
-	background: #ebebeb;
+.third-width p{
+    padding-right:2%;
 }
 
-#contact .full-width{
-	padding: 110px 0;
+#width1 p{
+    border-right:1px solid #484848;;
 }
 
-#contact img#contact-img {
-	margin-left:100px;
-	border: 10px solid #ffffff;
+#width2 p{
+    border-right:1px solid #484848;;
 }
 
-#contact .half-width #contact-info {
-	padding-top:100px;
+#width3{
+    padding-right:0;
 }
 
-#contact h2,  #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
-}
-
-#contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height:44px;
-    font-weight: bold;
+#work h3{
+    text-align:center;
+    color:#484848;
+    font-weight:700;
+    font-size:1.2em;
 }
 
-#contact #email-header {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
+.add-skills{
+    width:90%;
+    display:block;
+    float:left;
+    color:#282828;
+    margin:1% 5%;
 }
 
-#contact #socialmedia-header {
-	font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-}
+.add-skills span{
 
-#contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-weight: bold;
-    font-size: 28px;
+    font-weight:700;
 }
 
 
-#contact ul {
-    list-style: none;
-}
-#contact ul li {
-     display: inline-block;
-}
-#contact ul img {
-    font-size: 32px;
-    padding-left: 35px;
-    padding-right: 35px;
 
+
+/*================     TABLET   Footer   =========================== */
+
+footer{
+    clear:both;
+}
+
+.fab.fa-linkedin-in{
+    font-size:2em;
+    color:tomato;
+}
+
+.fab.fa-github{
+    font-size:2em;
+    color:tomato;
+}
+
+.socials{
+    margin:3% 0 2% 4%;
+
+}
+
+.footer-logo{
+    margin: 1% 0 1% 21%;
+}
+
+/*================  TABLET  About =========================== */
+
+/*
+
+.half-width1, .half-width2{
+    display:block;
+    float:left;
+}
+
+
+.half-width1{
+    width:40%;
+    padding:0 2%;
+}
+
+.half-width2{
+    width:50%;
+    padding:0 0 0 2%;
+}
+
+.halfwidth2 p{
+    width:77%;
+    display:inline;
+    text-align:justify;
+
+}
+
+.about-img {
+    width:50%;
+    float:right;
+    shape-outside:url('../img/cwoodprof.png');
+    shape-margin:1%;
+    margin-left:;
+    margin-bottom:;
+
+}
+
+
+*/
+
+
+  
+
+}/******* END OF TABLET ******/
+
+@media only screen and (min-width:940px) {
+  /* Desktop styles here */
+
+
+/*================    DESKTOP   HEADER  =========================== */
+
+.header-info h1{
+    font-size:2em;
+    padding:0 5%;
+
+}
+
+/*================    DESKTOP  Work  =========================== */ 
+
+
+.add-skills{
+    width:80%;
+    margin:1% 10%;
+}
+
+
+
+
+}/******* END OF DESKTOP ******/
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
