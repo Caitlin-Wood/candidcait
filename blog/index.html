@@ -12,8 +12,9 @@
         <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/blog.css">
   <link rel="stylesheet" href="../css/all.css">
+
 
   <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700|Oswald:500,700" rel="stylesheet"> 
   
@@ -22,31 +23,33 @@
 </head>
 
 
-<body>
-  <header class="header-container">
-  	<section class="header-images">
-  	  <figure>
-  		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-  	  </figure>
-  	</section> <!-- header with images -->
 
-  	<section class="header-info">
-  	    <div class="header-nav">
-  	      <nav>
+
+<body>
+  <header>
+  	<div class="blog-header">
+ 
+  	  <figure class="blog-logo">
+  		<a href="index.html"><img src="../img/logo.png" alt="logo"></a>
+  	  </figure>
+
+
+  	
+  	      <nav> 
   	      	<ul>
 			  <li><a href="../index.html">Home</a></li>
 			  <li><a href="#blog-contact">Contact</a></li>
-			  <li class="blog-nav"><a href="index.html">Blog</a></li>
+			  <li><a href="index.html"><span>Blog</span></a></li>
 			</ul>	
 		  </nav>
-		</div>
-	</section> <!-- header info with nav -->
+
+	</div> <!-- header  with nav -->
 		
 	</header> <!---------------------- HEADER ----------------------------->
 
 
 
-  <aside class="comedy-container">
+ <!-- <aside class="comedy-container">
     <div class="comedy-div" id="upcoming">
      <h4>Upcoming Comedy Shows:</h4>
       <p>Uh, oh... Nothing on the schedule!</p>
@@ -57,10 +60,12 @@
             <img src="img/comedykapow" alt="comedy ad">
           </figure>
       </div>
-  </aside> <!---------------------- Comedy Sidebar ----------------------------->
+  </aside> -->
+
+  <!---------------------- Comedy Sidebar ----------------------------->
 
 <main>
-  <section id="blog-wrapper">
+  <section class="blog-wrapper">
     <div class="blog-summary">
       <h1> Why a Blog?.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -68,21 +73,21 @@
   
 
 
-    <div id="blog-entry">
+    <div id="entry1" class="blog-entry">
     	<h2>Title of Blog Entry Number 1</h2>
          <p class="preview">Paragraph with blog entry first 2 sentances.</p>
          <span>Continue Reading&mldr;</span>
          <p class="blog-entry-full"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
     </div>
 
-    <div id="blog-entry">
+    <div id="entry2" class="blog-entry">
     	<h2>Title of Blog Entry Number 2</h2>
          <p class="preview">Paragraph with blog entry first 2 sentances.</p>
          <span>Continue Reading&mldr;</span>
          <p class="blog-entry-full">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
     </div>
 
-    <div id="blog-entry">
+    <div id="entry3" class="blog-entry">
     	<h2>Title of Blog Entry Number 3</h2>
          <p class="preview">Paragraph with blog entry first 2 sentances.</p>
          <span>Continue Reading&mldr;</span>
@@ -96,31 +101,22 @@
 </main> <!---------------------- MAIN CONTENT ----------------------------->
 
 
-<footer id="blog-contact">
+<footer id="contact">
   <div class="socials">
     <ul>
-      <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
     </ul>
   </div> <!----- SOCIAL -- BLOG contact -------> 
   
   <figure class="footer-logo">
-  	<a href="index.html"><img src="img/logo-abbrv.png" alt="logo"></a>
+  	<a href="index.html"><img src="../img/logo-abbrv.png" alt="logo"></a>
   </figure>
   
-  <div class="footer-nav">
-    <nav>
-  	 <ul>
-	  <li><a href="../index.html">Home</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	  <li class="blog-nav"><a href="index.html">Blog</a></li>
-	 </ul>	
-	</nav>
-  </div> <!------ footer nav ------> 
 
 </footer> <!---------------------- FOOTER ----------------------------->
         		
-    
+
 
         <!------------------------------ scripts ------------------------------------->
 

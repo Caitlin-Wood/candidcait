@@ -103,6 +103,13 @@ textarea {
 /*=============== GLOBAL STYLES ==============*/
 
 html, body{
+    background: url(../img/bulbs.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+
     font-family: 'Arimo', sans-serif;
     width:100%;
     height:100%;
@@ -112,25 +119,30 @@ html, body{
 
 }
 
+
  header{
+    width:100%;
+    padding:2% 0;
+    height:auto;
+    display: block;
+    float:left;
+    background-color:rgba(0,0,0,0.4);
+}
+
+.blog-header{
     width:96%;
-    padding:2% 2%;
+    padding:0 2%;
+    margin:0 auto;
+    max-width:1400px;
+    height:auto;
+
+
 }
 
-
-h1 {
-    color:#282828;
-    font-size:1.5em;
-}
-
-
-h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
-}
-
-h2, h3, h4{
-    color:tomato;
-    font-size:1.4em;
+.blog-logo{
+    float:left;
+    width:45%;
+    max-width:250px;
 }
 
 figure {
@@ -143,6 +155,117 @@ img {
 }
 
 
+
+nav{
+  float:right;
+  padding:1em 1em 0 0;
+ 
+  color:tomato;
+  font-weight:700;
+}
+
+nav ul{
+   margin:0 auto;
+   padding:0;
+
+}
+
+nav li{
+  text-transform:uppercase;
+  list-style:none;
+  font-size:1.2em;
+  padding:5px 0;
+
+}
+
+nav a{
+    color:tomato;
+    text-decoration: none;
+}
+
+a span{
+    color:rgb(242, 162, 13);
+}
+
+main{
+    max-width:1200px;
+    margin:1em auto;
+}
+
+
+.blog-wrapper { 
+    width:90%;
+    margin:0 auto;
+          display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+    display: flex;
+      -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.blog-summary{
+    width:100%;
+    height:auto;
+    display:flex;
+     display: flex;
+      -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items:flex-start;
+}
+
+.blog-entry{
+    display: flex;
+    margin:0.5em 0;
+    justify-content: center;
+    align-items: space-between;
+    line-height: 1.5em;
+    font-size: 1em;
+    width: 80%;
+    height: auto;
+    border-radius:25px;
+    background-color:rgba(200, 192, 100, 0.5);
+}
+
+
+h1 {
+    color:#fff;
+    font-size:1.5em;
+}
+
+.blog-summary p{
+    color:#fff;
+}
+
+.blog-entry h2, .preview, .preview span{
+    display:flex;
+    width:100%;
+    flex-flow:row wrap;
+
+}
+
+.blog-entry-full{
+    display:none;
+} 
+
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h2, h3, h4{
+    color:tomato;
+    font-size:1.4em;
+}
+
+
+
+
+
 a:link,i:link,.fab:link, .fa:link{
     color:tomato;
 }  
@@ -151,326 +274,6 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
     color:rgb(242, 162, 13);
     cursor:pointer;
 }  
-
-
-.header-images{
-    width:90%;
-    padding-bottom:35%;
-    margin:0 auto;
-    max-width:1200px;
-    max-height:60px;
-}
-
-.header-info{
-    width:96%;
-    padding:0 2%;
-    max-width:940px;
-}
-
-
-
-
-/*=============================== HEADER ======================================*/
-
-.header-container{
-   width:100%;
-   margin:0 auto;
-   padding:2% 0;
-   background-color:#e0e0e0;
-}
-
-.header-images{
-   background: #f8f8f8 url('../img/hero.png') center no-repeat ; 
-   background-size:cover;
-}
-
-.header-logo{
-    width:100%;
-    margin:0;
-}
-
-.header-logo img{
-    width:30%;
-    height:auto;
-    margin:5% 0 0 60%;
-    max-width:300px;
-}
-
-.header-info{
-    font-size:1em;
-    margin:0 auto;
-}
-
-.header-info h1{
-    padding:0 2%;
-}
-
-
-.header-info span{
-    color:rgb(242, 162, 13);
-}
-
-
-
-
-
-
-/*=================== Header Nav ======================*/
-
-
-  @media only screen and (max-width:600px){
-
-.menu{
-    margin-left:70%;
-    text-align:center;
-    text-transform: uppercase;
-
-}
-
-
-
-.menu a:hover, .menu i:hover {
-    color:rgb(242, 162, 13);
-}
-
-
-.menu a{
-    color:tomato;
-    text-decoration: none;
-    font-size:0.875em;
-    font-weight:700;
-}
-
-.menu i{
-    color:tomato;
-    font-size:1.5em;
-    
-}
-
-.nav {
-   display:none;
-   position:fixed;
-
-}
-
-.nav:target {
-    display:block;
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0;
-    bottom:0;
-    overflow:100%;
-    background-color:rgba(0, 0, 0, 0.4);
-
-}
-
-nav .back {
-    width:100%;
-    height:100%;
-    position:absolute;
-    z-index:0;
-    left:0;
-
-}
-
-
-nav{
-    font-size:2em;
-    font-weight:700;
-
-}
-
-
-nav ul{
-    list-style:none;
-    background-color:#282828;
-    z-index:1;
-    padding:0;
-    margin:50% 0;
-    border-top:1px solid #fff;
-    border-bottom:1px solid #fff;
-     
-}
-
-nav ul li{
-    display:block;
-    line-height:2em;
-    text-transform:uppercase;
-
-
-
-}
-
-nav ul li a{
-    text-decoration:none;
-    position:relative;
-
- 
-}
-
-} /*End of Mobile Nav Style*****/
-
-/*=============================== ABOUT ======================================*/
-
-#about{
-    width:96%;
-    padding:0;
-    margin:1em auto;
-    max-width:940px;
-}
-
-#about h2{
-    margin:0.5em 1em;
-}
-
-
-
-.about-container{
-    width:96%;
-    margin:0 auto;
-}
-
-.about-img{
-    float:left;
-    border-radius:50%;
-    width:40%;
-    shape-margin:1px;
-    margin-right:2%;
-    margin-bottom:0.5%;
-    shape-outside:inset(1% round 100%);
-}
-
-div.half-width1, div .half-width2{
-    width:100%;
-    display:block;
-    text-align:justify;
-    font-size:1em;
-    line-height:1.6;
-    padding:0 1%;
-
-}
-
-
-.half-width1 {    
-    margin-bottom:0;
-    float:right;
-    margin-left:20%;
-}
-
-
-.half-width2{  
-    margin-top:0;
-    float:left
-    
-}
-
-
-
-/*================================ WORK ======================================*/
-
-#work {
-    clear:both;
-    width:100%;
-    background:rgba(242, 162, 13, 0.6);
-}
-
-.full-width{
-    width:96%;
-    padding: 1% 2%;
-}
-
-.third-width{
-    width:80%;
-    text-align:justify;
-       margin:0 8%;
-}
-
-
-#work h2{
-    color:tomato;
-    margin:0.5em 1em;
-
-}
-
-
-#work h3{
-    text-align:center;
-    color:#484848;
-    font-weight:700;
-    font-size:1.2em;
-}
-
-.add-skills{
-    color:#282828;
-    margin:2em 0 1em 0;
-}
-
-.add-skills span{
-    font-weight:700;
-}
-
-
-        /* ===================================================
-            BLOG page
-        ===================================================== */
-
-        
-
-        /*=============== Blog Header ==============*/
-
-        #blog header{
-            width:100%;
-            padding:2% 0; 
-            margin:0 auto;
-            background-color:#e0e0e0;
-            float:left;
-
-        }
-
-        .blog-logo img{
-            float:left;
-            width:30%;
-        }
-
-        #blog nav{
-            width:60%;
-            margin:8% 2%;
-            float:left;
-            font-size:0.875em;
-            line-height:1em;
-        }
-
-        #blog ul{
-            float:left;
-            width:100%;
-            background-color:#e0e0e0;;
-            margin:0;
-            border:none;
-        }
-
-        #blog li{
-            display:inline;
-            padding:0 2.5%;
-        }
-
-        #blog a{
-            color:tomato;
-        }
-
-        #blog a:hover{
-            color:rgb(242, 162, 13);
-        }
-
-        #blog nav span{
-            color:#282828;
-        }
-
-        aside {
-            clear:both;
-        }
-
-
 
 
 
@@ -488,7 +291,7 @@ div.half-width1, div .half-width2{
 footer#contact{
      width:100%;
      float:left;
-     background:#e0e0e0;
+     background-color:rgba(0,0,0,0.4);
 }
 
 .socials{
@@ -517,12 +320,12 @@ footer#contact{
 }
 
 
-.fab.fa-linkedin-in, .fab.fa-github {
+.fab.fa-twitter, .fab.fa-instagram {
     color:tomato;
     font-size:1.5em;
 }
 
-.fab.fa-linkedin-in:hover, .fab.fa-github:hover {
+.fab.fa-twitter:hover, .fab.fa-instagram:hover {
     color:rgb(242, 162, 13);
     font-size:1.5em;
 }
@@ -630,140 +433,6 @@ footer#contact{
   /* Tablet styles here */
 
 
-/*================ TABLET Header =========================== */
-
-.header-info h1{
-    font-size:2em;
-    padding:0 10%;
-
-}
-
-.menu i{
-    display:none;
-
-}
-
-#menu{
-    display: none;
-}
-
-.nav {
-    display:block;
-}
-
-nav{
-    font-size:1em;
-    display:block;
-    width:100%;
-    height:1.5em;
-
-}
-
-
-nav ul{
-    list-style:none;
-    padding:0;
-    margin:0 auto;
-    width:60%;
-    float:right;
-}
-
-nav ul li{
-    display:inline;
-    text-transform:uppercase;
-    font-weight:700;
-    padding:0;
-    margin-left:5%;
-}
-
-nav ul li a{
-    color:tomato;
-    text-decoration:none;
-    padding:0;
-    text-align:center;
-}
-
-
-
-
-/*=========================== TABLET WORK ======================================*/
-
-#work {
-    clear:both;
-    width:100%;
-    background:rgba(242, 162, 13, 0.6);
-    display:block;
-    float:left;
-    padding:0;
-    margin:0 auto;
-}
-
-#work h2{
-    color:tomato;
-    margin:0.5em 1.4em;
-
-}
-
-.work-container{
-    width:96%;
-    padding:0 0 0 4%;
-    margin:0 auto;
-}
-
-.full-width{
-    width:100%;
-    margin:0 auto;
-    padding:0;
-    max-width:1000px;
-
-}
-
-.third-width{
-    width:30%;
-    display:block;
-    float:left;
-    margin:0;
-    padding:0 1%;
-    text-align:left;
-}
-
-.third-width p{
-    padding-right:2%;
-}
-
-#width1 p{
-    border-right:1px solid #484848;;
-}
-
-#width2 p{
-    border-right:1px solid #484848;;
-}
-
-#width3{
-    padding-right:0;
-}
-
-#work h3{
-    text-align:center;
-    color:#484848;
-    font-weight:700;
-    font-size:1.2em;
-}
-
-.add-skills{
-    width:90%;
-    display:block;
-    float:left;
-    color:#282828;
-    margin:1% 5%;
-}
-
-.add-skills span{
-
-    font-weight:700;
-}
-
-
 
 
 /*================     TABLET   Footer   =========================== */
@@ -791,86 +460,27 @@ footer{
     margin: 1% 0 1% 21%;
 }
 
-/*================  TABLET  About =========================== */
 
-/*
-
-.half-width1, .half-width2{
-    display:block;
-    float:left;
-}
-
-
-.half-width1{
-    width:40%;
-    padding:0 2%;
-}
-
-.half-width2{
-    width:50%;
-    padding:0 0 0 2%;
-}
-
-.halfwidth2 p{
-    width:77%;
-    display:inline;
-    text-align:justify;
-
-}
-
-.about-img {
-    width:50%;
-    float:right;
-    shape-outside:url('../img/cwoodprof.png');
-    shape-margin:1%;
-    margin-left:;
-    margin-bottom:;
-
-}
-
-
-*/
-
-
-  
 
 }/******* END OF TABLET ******/
 
 @media only screen and (min-width:940px) {
   /* Desktop styles here */
 
-
-/*================    DESKTOP   HEADER  =========================== */
-
-.header-info h1{
-    font-size:2em;
-    padding:0 5%;
+.fab.fa-linkedin-in{
+    font-size:3em;
 
 }
 
-
-
-
-nav ul{
-
-    width:50%;
-
+.fab.fa-github{
+    font-size:3em;
+ 
 }
 
-nav ul li{
-    margin-left:7%;
+.socials{
+    margin:2% 0 2% 3%;
+
 }
-
-
-/*================    DESKTOP  Work  =========================== */ 
-
-
-.add-skills{
-    width:80%;
-    margin:1% 10%;
-}
-
-
 
 
 }/******* END OF DESKTOP ******/
