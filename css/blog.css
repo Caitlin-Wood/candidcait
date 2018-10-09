@@ -126,7 +126,7 @@ html, body{
     height:auto;
     display: block;
     float:left;
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.8);
 }
 
 .blog-header{
@@ -196,6 +196,7 @@ main{
 .blog-wrapper { 
     width:90%;
     margin:0 auto;
+
           display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -204,11 +205,15 @@ main{
       -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: center;
+   
 
 }
 
 .blog-summary{
     width:100%;
+        margin:1em auto;
+        padding:0 1em;
+
     height:auto;
     display:flex;
      display: flex;
@@ -216,11 +221,14 @@ main{
     flex-flow: row wrap;
     justify-content: left;
     align-items:flex-start;
+         background-color:rgba(0,0,0,0.5);
+             border-radius: 20px;
 }
 
 .blog-entry{
     display: flex;
     margin:0.5em 0;
+    padding:0 1em;
     justify-content: center;
     align-items: space-between;
     line-height: 1.5em;
@@ -228,40 +236,65 @@ main{
     width: 80%;
     height: auto;
     border-radius:25px;
-    background-color:rgba(200, 192, 100, 0.5);
+    background-color:rgba(192, 192, 192, 0.9);
+    flex-wrap:wrap;
 }
-
-
-h1 {
-    color:#fff;
-    font-size:1.5em;
-}
-
-.blog-summary p{
-    color:#fff;
-}
-
-.blog-entry h2, .preview, .preview span{
-    display:flex;
-    width:100%;
-    flex-flow:row wrap;
-
-}
-
-.blog-entry-full{
-    display:none;
-} 
-
 
 h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
 }
 
-h2, h3, h4{
-    color:tomato;
-    font-size:1.4em;
+
+h1 {
+    color:#fff;
+    font-size:1em;
+    margin-bottom:0;
 }
 
+h2 {
+    color:#282828;
+    font-size:1em;
+    margin-bottom:0;
+    padding-bottom:5px;
+    border-bottom:2px solid tomato;
+}
+
+.blog-summary p{
+    color:#fff;
+    font-size:0.875em;
+    font-weight:700;
+}
+
+.blog-entry h2, .preview, .preview a{
+    display:flex;
+    width:100%;
+    font-weight:700;
+
+}
+
+.blog-entry p {
+    height:4.5em;
+    overflow:hidden;
+    margin:0.5em 0;
+    font-size:0.875em;
+    line-height:1.3em;
+} 
+
+.preview{
+    justify-content:center;
+    margin:5px 0;
+}
+
+
+
+
+
+.blog-entry a:link{
+    color:tomato;
+    font-weight:700;
+    font-style:italic;
+    text-decoration:none;
+}
 
 
 
@@ -276,7 +309,9 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
 }  
 
 
-
+#entry1-full:target, #entry2-full:target, #entry3-full:target{
+    height:auto;
+}
 
 
 
@@ -291,13 +326,13 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
 footer#contact{
      width:100%;
      float:left;
-     background-color:rgba(0,0,0,0.4);
+     background-color:rgba(0,0,0,0.7);
 }
 
 .socials{
     width:20%;
     float:left;
-    margin:5% 0 5% 5%;
+    margin:4% 0 2% 5%;
 
 }
 
@@ -306,7 +341,7 @@ footer#contact{
     list-style:none;
     display:block;
     float:left;
-    width:100%;
+    width:60px;
     padding:0;
     margin:0;
     
@@ -315,26 +350,29 @@ footer#contact{
 
 .socials ul li{
     display:inline;
-    padding-right:10%;
 
 }
 
 
-.fab.fa-twitter, .fab.fa-instagram {
+
+.fab.fa-twitter, .fab.fa-instagram, .fab.fa-linkedin-in,  .fab.fa-github {
     color:tomato;
-    font-size:1.5em;
+    font-size:1.2em;
 }
 
-.fab.fa-twitter:hover, .fab.fa-instagram:hover {
+.fab.fa-twitter:hover, .fab.fa-instagram:hover, .fab.fa-linkedin-in:hover,  .fab.fa-github:hover  {
     color:rgb(242, 162, 13);
-    font-size:1.5em;
 }
+
+.fab.fa-instagram, .fab.fa-linkedin-in {padding-right:15px}
+.fab.fa-linkedin-in,  .fab.fa-github {padding-bottom:15px;}
+
 
 
 .footer-logo{
     width:55%;
     float:right;
-    margin: 2% 2% 2% 18%;
+    margin: 2% 2% 2% 3%;
 
 
 }
@@ -432,32 +470,42 @@ footer#contact{
 @media only screen and (min-width:600px) {
   /* Tablet styles here */
 
+h1,h2 {
+    font-size:1.5em;
+}
+
+.blog-summary p, .blog-entry p {
+    font-size:1.1em;
+}
+
 
 
 
 /*================     TABLET   Footer   =========================== */
 
-footer{
-    clear:both;
-}
 
-.fab.fa-linkedin-in{
+
+.fab.fa-linkedin-in, .fab.fa-github, .fab.fa-instagram, .fab.fa-twitter{
     font-size:2em;
     color:tomato;
+    padding:0 10% 0 0;
 }
 
-.fab.fa-github{
-    font-size:2em;
-    color:tomato;
-}
+
 
 .socials{
+    width:37%;
     margin:3% 0 2% 4%;
 
 }
 
+.socials ul{
+    width:100%;
+}
+
+
 .footer-logo{
-    margin: 1% 0 1% 21%;
+    margin: 1% 0 1% 4%;
 }
 
 
@@ -467,15 +515,12 @@ footer{
 @media only screen and (min-width:940px) {
   /* Desktop styles here */
 
-.fab.fa-linkedin-in{
-    font-size:3em;
+.fab.fa-linkedin-in, .fab.fa-github, .fab.fa-instagram, .fab.fa-twitter{
+    font-size:2.5em;
 
 }
 
-.fab.fa-github{
-    font-size:3em;
- 
-}
+
 
 .socials{
     margin:2% 0 2% 3%;
