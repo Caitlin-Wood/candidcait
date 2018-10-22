@@ -153,13 +153,6 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
 }  
 
 
-.header-images{
-    width:90%;
-    padding-bottom:35%;
-    margin:0 auto;
-    max-width:1200px;
-    max-height:60px;
-}
 
 .header-info{
     width:96%;
@@ -180,9 +173,14 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
 }
 
 .header-images{
-   background: #f8f8f8 url('../img/hero.png') center no-repeat ; 
+    width:90%;
+    padding-bottom:35%;
+    margin:0 auto;
+     background: #f8f8f8 url('../img/hero.png') center no-repeat ; 
    background-size:cover;
+
 }
+
 
 .header-logo{
     width:100%;
@@ -193,7 +191,7 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
     width:30%;
     height:auto;
     margin:5% 0 0 60%;
-    max-width:300px;
+    max-width:200px;
 }
 
 .header-info{
@@ -638,6 +636,11 @@ footer#contact{
 
 }
 
+.header-images{
+    width:90%;
+    padding-bottom:28%;
+}
+
 .menu i{
     display:none;
 
@@ -841,6 +844,19 @@ footer{
 
 
 /*================    DESKTOP   HEADER  =========================== */
+
+.header-images{
+    padding-bottom:25%;
+}
+
+                @media only screen and (min-width:1200px) {
+                
+                .header-images{
+                    width:70%;
+                    padding-bottom:20%;
+                }
+
+
 
 .header-info h1{
     font-size:2em;
