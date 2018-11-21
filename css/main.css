@@ -109,23 +109,20 @@ html, body{
     font-size:16px;
     background-color:#ffffff;
     color:#383838;
-
 }
 
- header{
+header{
     width:96%;
     padding:2% 2%;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
 
 h1 {
     color:#282828;
     font-size:1.5em;
-}
-
-
-h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
 }
 
 h2, h3, h4{
@@ -142,7 +139,6 @@ img {
  height: auto;
 }
 
-
 a:link,i:link,.fab:link, .fa:link{
     color:tomato;
 }  
@@ -151,16 +147,6 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
     color:rgb(242, 162, 13);
     cursor:pointer;
 }  
-
-
-
-.header-info{
-    width:96%;
-    padding:0 2%;
-    max-width:940px;
-}
-
-
 
 
 /*=============================== HEADER ======================================*/
@@ -178,9 +164,23 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
     margin:0 auto;
      background: #f8f8f8 url('../img/hero.png') center no-repeat ; 
    background-size:cover;
-
 }
 
+.header-info{
+    width:96%;
+    padding:0 2%;
+    max-width:940px;
+    font-size:1em;
+    margin:0 auto;
+}
+
+.header-info h1{
+    padding:0 2%;
+}
+
+.header-info span{
+    color:rgb(242, 162, 13);
+}
 
 .header-logo{
     width:100%;
@@ -194,64 +194,40 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
     max-width:200px;
 }
 
-.header-info{
-    font-size:1em;
-    margin:0 auto;
-}
-
-.header-info h1{
-    padding:0 2%;
-}
-
-
-.header-info span{
-    color:rgb(242, 162, 13);
-}
-
-
-
-
 
 
 /*=================== Header Nav ======================*/
 
+@media only screen and (max-width:600px){
 
-  @media only screen and (max-width:600px){
-
-.menu{
+  .menu{
     margin-left:70%;
     text-align:center;
     text-transform: uppercase;
+  }
 
-}
-
-
-
-.menu a:hover, .menu i:hover {
+  .menu a:hover, .menu i:hover {
     color:rgb(242, 162, 13);
-}
+  }
 
-
-.menu a{
+  .menu a{
     color:tomato;
     text-decoration: none;
     font-size:0.875em;
     font-weight:700;
-}
+  }
 
-.menu i{
+  .menu i{
     color:tomato;
     font-size:1.5em;
-    
-}
+  }
 
-.nav {
-   display:none;
-   position:fixed;
+  .nav {
+    display:none;
+    position:fixed;
+  }
 
-}
-
-.nav:target {
+  .nav:target {
     display:block;
     width:100%;
     height:100%;
@@ -260,27 +236,23 @@ a:hover,i:hover, .fab:hover, .fa:hover   {
     bottom:0;
     overflow:100%;
     background-color:rgba(0, 0, 0, 0.4);
+  }
 
-}
-
-nav .back {
+  nav .back {
     width:100%;
     height:100%;
     position:absolute;
     z-index:0;
     left:0;
+  }
 
-}
-
-
-nav{
+  nav {
     font-size:2em;
     font-weight:700;
+  }
 
-}
 
-
-nav ul{
+  nav ul{
     list-style:none;
     background-color:#282828;
     z-index:1;
@@ -288,256 +260,157 @@ nav ul{
     margin:50% 0;
     border-top:1px solid #fff;
     border-bottom:1px solid #fff;
-     
-}
+  }
 
-nav ul li{
+  nav ul li{
     display:block;
     line-height:2em;
     text-transform:uppercase;
+  }
 
-
-
-}
-
-nav ul li a{
+  nav ul li a{
     text-decoration:none;
     position:relative;
+  }
 
- 
-}
-
-} /*End of Mobile Nav Style*****/
+} /****End of Mobile Nav Style*****/
 
 /*=============================== ABOUT ======================================*/
 
-#about{
-    width:96%;
-    padding:0;
-    margin:1em auto;
-    max-width:940px;
-}
-
-#about h2{
-    margin:0.5em 1em;
-}
-
-
-
 .about-container{
-    width:96%;
-    margin:0 auto;
+  width:96%;
+  margin:0 auto;
 }
 
 .about-img{
-    float:left;
-    border-radius:50%;
-    width:40%;
-    shape-margin:1px;
-    margin-right:2%;
-    margin-bottom:0.5%;
-    shape-outside:inset(1% round 100%);
+  float:left;
+  border-radius:50%;
+  width:40%;
+  shape-margin:1px;
+  margin-right:2%;
+  margin-bottom:0.5%;
+  shape-outside:inset(1% round 100%);
+}
+
+#about{
+  width:96%;
+  padding:0;
+  margin:1em auto;
+  max-width:940px;
+}
+
+#about h2{
+  margin:0.5em 1em;
 }
 
 div.half-width1, div .half-width2{
-    width:100%;
-    display:block;
-    text-align:justify;
-    font-size:1em;
-    line-height:1.6;
-    padding:0 1%;
-
+  width:100%;
+  display:block;
+  text-align:justify;
+  font-size:1em;
+  line-height:1.6;
+  padding:0 1%;
 }
-
 
 .half-width1 {    
-    margin-bottom:0;
-    float:right;
-    margin-left:20%;
+  margin-bottom:0;
+  float:right;
+  margin-left:20%;
 }
-
 
 .half-width2{  
-    margin-top:0;
-    float:left
-    
+  margin-top:0;
+  float:left
 }
-
 
 
 /*================================ WORK ======================================*/
 
-#work {
-    clear:both;
-    width:100%;
-    background:rgba(242, 162, 13, 0.6);
-}
-
-.full-width{
-    width:96%;
-    padding: 1% 2%;
-}
-
-.third-width{
-    width:80%;
-    text-align:justify;
-       margin:0 8%;
-}
-
-
-#work h2{
-    color:tomato;
-    margin:0.5em 1em;
-
-}
-
-
-#work h3{
-    text-align:center;
-    color:#484848;
-    font-weight:700;
-    font-size:1.2em;
-}
-
 .add-skills{
-    color:#282828;
-    margin:2em 0 1em 0;
+  color:#282828;
+  margin:2em 0 1em 0;
 }
 
 .add-skills span{
-    font-weight:700;
+  font-weight:700;
 }
 
+.third-width{
+  width:80%;
+  text-align:justify;
+  margin:0 8%;
+}
 
-        /* ===================================================
-            BLOG page
-        ===================================================== */
+.full-width{
+  width:96%;
+  padding: 1% 2%;
+}
 
-        
+#work {
+  clear:both;
+  width:100%;
+  background:rgba(242, 162, 13, 0.6);
+}
 
-        /*=============== Blog Header ==============*/
+#work h2{
+  color:tomato;
+  margin:0.5em 1em;
+}
 
-        #blog header{
-            width:100%;
-            padding:2% 0; 
-            margin:0 auto;
-            background-color:#e0e0e0;
-            float:left;
-
-        }
-
-        .blog-logo img{
-            float:left;
-            width:30%;
-        }
-
-        #blog nav{
-            width:60%;
-            margin:8% 2%;
-            float:left;
-            font-size:0.875em;
-            line-height:1em;
-        }
-
-        #blog ul{
-            float:left;
-            width:100%;
-            background-color:#e0e0e0;;
-            margin:0;
-            border:none;
-        }
-
-        #blog li{
-            display:inline;
-            padding:0 2.5%;
-        }
-
-        #blog a{
-            color:tomato;
-        }
-
-        #blog a:hover{
-            color:rgb(242, 162, 13);
-        }
-
-        #blog nav span{
-            color:#282828;
-        }
-
-        aside {
-            clear:both;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
+#work h3{
+  text-align:center;
+  color:#484848;
+  font-weight:700;
+  font-size:1.2em;
+}
 
 /*================================ FOOTER ======================================*/
 
-footer#contact{
-     width:100%;
-     float:left;
-     background:#e0e0e0;
-}
-
-.socials{
-    width:20%;
-    float:left;
-    margin:5% 0 5% 5%;
-
-}
-
-
-.socials ul{
-    list-style:none;
-    display:block;
-    float:left;
-    width:100%;
-    padding:0;
-    margin:0;
-    
-}
-
-
-.socials ul li{
-    display:inline;
-    padding-right:10%;
-
-}
-
-
 .fab.fa-linkedin-in, .fab.fa-github {
-    color:tomato;
-    font-size:1.5em;
+  color:tomato;
+  font-size:1.5em;
 }
 
 .fab.fa-linkedin-in:hover, .fab.fa-github:hover {
-    color:rgb(242, 162, 13);
-    font-size:1.5em;
+  color:rgb(242, 162, 13);
+  font-size:1.5em;
 }
-
 
 .footer-logo{
-    width:55%;
-    float:right;
-    margin: 2% 2% 2% 18%;
-
-
+  width:55%;
+  float:right;
+  margin: 2% 2% 2% 18%;
 }
 
+footer#contact{
+  width:100%;
+  float:left;
+  background:#e0e0e0;
+}
 
 #contact img{
     width:25%;
     max-width:80px;
+}
+
+.socials{
+  width:20%;
+  float:left;
+  margin:5% 0 5% 5%;
+}
+
+.socials ul{
+  list-style:none;
+  display:block;
+  float:left;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+.socials ul li{
+  display:inline;
+  padding-right:10%;
 }
 
 /* ==========================================================================
@@ -622,7 +495,7 @@ footer#contact{
 
 /* ==========================================================================
    Media Queries for Responsive Design.
-   ========================================================================== */
+========================================================================== */
 
 @media only screen and (min-width:600px) {
   /* Tablet styles here */
@@ -633,7 +506,6 @@ footer#contact{
 .header-info h1{
     font-size:2em;
     padding:0 10%;
-
 }
 
 .header-images{
@@ -643,7 +515,6 @@ footer#contact{
 
 .menu i{
     display:none;
-
 }
 
 #menu{
@@ -659,7 +530,6 @@ nav{
     display:block;
     width:100%;
     height:1.5em;
-
 }
 
 
@@ -687,38 +557,24 @@ nav ul li a{
 }
 
 
-
-
 /*=========================== TABLET WORK ======================================*/
 
-#work {
-    clear:both;
-    width:100%;
-    background:rgba(242, 162, 13, 0.6);
+.add-skills{
+    width:90%;
     display:block;
     float:left;
-    padding:0;
-    margin:0 auto;
+    color:#282828;
+    margin:1% 5%;
 }
 
-#work h2{
-    color:tomato;
-    margin:0.5em 1.4em;
-
+.add-skills span{
+    font-weight:700;
 }
 
 .work-container{
     width:96%;
     padding:0 0 0 4%;
     margin:0 auto;
-}
-
-.full-width{
-    width:100%;
-    margin:0 auto;
-    padding:0;
-    max-width:1000px;
-
 }
 
 .third-width{
@@ -734,16 +590,26 @@ nav ul li a{
     padding-right:2%;
 }
 
-#width1 p{
-    border-right:1px solid #484848;;
+.full-width{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    max-width:1000px;
 }
 
-#width2 p{
-    border-right:1px solid #484848;;
+#work {
+    clear:both;
+    width:100%;
+    background:rgba(242, 162, 13, 0.6);
+    display:block;
+    float:left;
+    padding:0;
+    margin:0 auto;
 }
 
-#width3{
-    padding-right:0;
+#work h2{
+    color:tomato;
+    margin:0.5em 1.4em;
 }
 
 #work h3{
@@ -753,27 +619,17 @@ nav ul li a{
     font-size:1.2em;
 }
 
-.add-skills{
-    width:90%;
-    display:block;
-    float:left;
-    color:#282828;
-    margin:1% 5%;
+#width1 p{
+    border-right:1px solid #484848;;
 }
-
-.add-skills span{
-
-    font-weight:700;
+#width2 p{
+    border-right:1px solid #484848;;
 }
-
-
-
+#width3 {
+    padding-right:0;
+}
 
 /*================     TABLET   Footer   =========================== */
-
-footer{
-    clear:both;
-}
 
 .fab.fa-linkedin-in{
     font-size:2em;
@@ -785,92 +641,45 @@ footer{
     color:tomato;
 }
 
-.socials{
-    margin:3% 0 2% 4%;
-
+footer{
+    clear:both;
 }
 
 .footer-logo{
     margin: 1% 0 1% 21%;
 }
 
-/*================  TABLET  About =========================== */
-
-/*
-
-.half-width1, .half-width2{
-    display:block;
-    float:left;
+.socials{
+    margin:3% 0 2% 4%;
 }
 
-
-.half-width1{
-    width:40%;
-    padding:0 2%;
-}
-
-.half-width2{
-    width:50%;
-    padding:0 0 0 2%;
-}
-
-.halfwidth2 p{
-    width:77%;
-    display:inline;
-    text-align:justify;
-
-}
-
-.about-img {
-    width:50%;
-    float:right;
-    shape-outside:url('../img/cwoodprof.png');
-    shape-margin:1%;
-    margin-left:;
-    margin-bottom:;
-
-}
+}/***************** END OF TABLET *************************/
 
 
-*/
-
-
-  
-
-}/******* END OF TABLET ******/
 
 @media only screen and (min-width:940px) {
   /* Desktop styles here */
 
-
-/*================    DESKTOP   HEADER  =========================== */
+/*============================= DESKTOP   HEADER  =========================== */
 
 .header-images{
     padding-bottom:25%;
 }
-
-                @media only screen and (min-width:1200px) {
-                
-                .header-images{
-                    width:70%;
-                    padding-bottom:20%;
-                }
-
-
+         @media only screen and (min-width:1200px) {
+            .header-images {
+              width:70%;
+              padding-bottom:20%;
+            }
+          }
 
 .header-info h1{
     font-size:2em;
     padding:0 5%;
-
 }
-
-
-
 
 nav ul{
 
     width:50%;
-
 }
 
 nav ul li{
@@ -878,18 +687,15 @@ nav ul li{
 }
 
 
-/*================    DESKTOP  Work  =========================== */ 
-
+/*================  DESKTOP  Work  ======================= */ 
 
 .add-skills{
     width:80%;
     margin:1% 10%;
 }
 
+}/**************** END OF DESKTOP ******************/
 
-
-
-}/******* END OF DESKTOP ******/
 
 /* ==========================================================================
    Print styles.
