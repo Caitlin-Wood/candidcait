@@ -252,6 +252,12 @@ a span{
   font-weight:700;
 }
 
+.blog-entry h2 span{
+  font-weight:400;
+  font-size: 0.7em;
+  padding: 0.4% 0 0 2%;
+}
+
 .blog-entry p{
   margin:0.75em 0;
   padding:0;
@@ -304,13 +310,13 @@ a span{
   flex-flow: row wrap;
   justify-content: left;
   align-items:flex-start;
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,0,0.7);
   border-radius: 20px;
 }
 
 .blog-summary p{
   color:#fff;
-  font-size:0.875em;
+  font-size:0.75em;
 }
 
 .header-blog-summary{
@@ -359,7 +365,7 @@ p span{
 footer#contact{
   width:100%;
   float:left;
-  background-color:rgba(0,0,0,0.7);
+  background-color:rgba(0,0,0,0.8);
 }
 
 .footer-logo{
@@ -483,7 +489,17 @@ h1,h2 {
   height:8em;
 } 
 
-.blog-summary p, .blog-entry p {
+.blog-entry h2 span{
+  font-size: 0.5em;
+  padding:0 0 0 2em;
+  margin-top:3px;
+}
+
+.blog-summary p{
+  font-size: 0.875em;
+}
+
+.blog-entry p {
   font-size:1.1em;
 }
 
